@@ -9,11 +9,13 @@ body, ul {
 
 body {
    background: $white;
+   overflow: hidden;
 }
 
 body, html {
    width: 100%;
    height: 100%;
+
 }
 
 section {
