@@ -1,0 +1,105 @@
+/* Join @font-face Ubuntu */
+// TODO: Fix it. Fonts inside images folder.
+@font-face {
+  font-family: 'Ubuntu';
+  src: image-url('ubuntu/Ubuntu-R.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+
+  color: white;
+  font-family: 'Ubuntu';
+  font-size: 25px;
+  margin: 0;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+  from {
+    background: #0C1B06;
+  }
+  to {
+    opacity: 1;
+    background: #5a9604;
+  }
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+  from {
+    background: #0C1B06;
+  }
+  to {
+    opacity: 1;
+    background: #5a9604;
+  }
+}
+
+.tile-navigator {
+  position: fixed;
+  background: gray;
+  right: 0;
+
+  a {
+    font-size: 12px;
+    margin: 10px;
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.tile {
+  height: 100vh;
+  padding: 0 10vw;
+
+  background: image-url('textures/2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./assets/textures/6.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/textures/6.jpg', sizingMethod='scale')";
+
+  &.tile--2 {
+    background: image-url('textures/5.jpg') no-repeat center center fixed;
+  }
+
+  &.tile--3 {
+    background: image-url('textures/1.png') no-repeat center center fixed;
+  }
+
+  &.tile--4 {
+    background: image-url('textures/3.jpg') no-repeat center center fixed;
+  }
+
+  h1 {
+    margin-top: 0;
+    padding-top: 50px;
+  }
+
+  .tile__item {
+    background: #0C1B06;
+    opacity: 0.4;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 22vw;
+    height: 30vh;
+    margin: 2vh;
+    cursor: pointer;
+
+    -webkit-box-shadow: 0px 0px 11px 6px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 11px 6px rgba(0,0,0,1);
+    box-shadow: 0px 0px 11px 6px rgba(0,0,0,1);
+
+    &:hover {
+      box-shadow: none;
+//    background: #5a9604;
+
+//      -webkit-animation: myfirst 1s;
+//      animation: myfirst 1s;
+    }
+  }
+}
