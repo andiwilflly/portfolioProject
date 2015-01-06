@@ -1,4 +1,8 @@
-$('document').ready(->
+$ ->
+
+  $("html, body").animate
+    scrollTop: $('.tile--7').offset().top
+  , 200
 
   $('.tile').each( (k, v)->
      $('.tile-navigator').append('<a>to ' + k + '</a>');
@@ -10,7 +14,17 @@ $('document').ready(->
     , 500
   )
 
-)
+  doSomething =->
+    $(@).removeClass('bounceInLeft').addClass('hinge')
+    $(@).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doNext);
+
+
+  doNext =->
+    $(@).removeClass('hinge').addClass('zoomInUp')
+
+  $('#animatedBitch').addClass('animated bounceInRight')
+  $('#animatedBitch').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething);
+
 
 
 

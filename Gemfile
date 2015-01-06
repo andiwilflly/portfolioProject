@@ -43,3 +43,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'pry', :group => :development
 gem "net-http-persistent", "~> 2.9"
 gem 'backbone-on-rails'
+gem 'requirejs-rails'

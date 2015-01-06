@@ -13,6 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
 
-
+//= require pfl/test
+//= require pfl/animation-controller
