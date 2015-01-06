@@ -4,11 +4,9 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-<<<<<<< HEAD
   get 'test' => 'home#show'
-=======
+
   resources :pfl
->>>>>>> 3ca21e0741a1a52551bcf2395a28e92778e5d3d4
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
