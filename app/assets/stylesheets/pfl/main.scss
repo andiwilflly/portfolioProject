@@ -8,7 +8,6 @@
 }
 
 body {
-
   color: white;
   font-family: 'Ubuntu';
   font-size: 25px;
@@ -59,8 +58,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./assets/textures/6.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/textures/6.jpg', sizingMethod='scale')";
 
   &.tile--2 {
     background: image-url('textures/5.jpg') no-repeat center center fixed;
