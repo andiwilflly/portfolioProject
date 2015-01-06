@@ -3,7 +3,7 @@
 <head>
   <title>PortfolioProject</title>
   <%= stylesheet_link_tag 'pfl/application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'pfl/application', 'data-turbolinks-track' => true %>
+  <%= requirejs_include_tag "pfl/pfl-setup" %>
   <%= csrf_meta_tags %>
 </head>
 
