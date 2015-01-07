@@ -37,7 +37,7 @@ body {
   }
 }
 
-.tile-navigator {
+.pfl-navigator {
   position: fixed;
   background: gray;
   right: 0;
@@ -205,10 +205,10 @@ body {
   background: #0E0E0E;
   color: #fafafa;
 
-//  color: #0E0E0E;
-//  color: #CB401F;
-//  color: #EA9E0D;
-//  color: #939393;
+  color: #0E0E0E;
+  color: #CB401F;
+  color: #EA9E0D;
+  color: #939393;
 
   .item-pfl {
     float: left;
@@ -238,3 +238,7 @@ body {
     }
   }
 }
+
+// TODO: move this to the top of main.scss
+@import "partials/sections/section";
+@import "partials/sections/section-home";

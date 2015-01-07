@@ -3,9 +3,9 @@ define [
 	],
 	() ->
 		require [
-				'pfl/test'
 				'pfl/animation-controller'
-        'pfl/window'
+				'pfl/test'
 			],
-			() ->
-				console.log 'omg'
+			(AnimationController) ->
+				animationController = new AnimationController
+				animationController.start()

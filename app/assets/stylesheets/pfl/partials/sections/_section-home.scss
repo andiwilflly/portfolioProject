@@ -1,0 +1,41 @@
+$item-size: 20vh;
+$item-margin: 1vh;
+
+.section-home {
+	background: #0E0E0E;
+}
+
+.pflTile {
+	width: 80vw;
+	margin: 10vh auto;
+	height: 100vh;
+	position: relative;
+
+	.pflTile__item {
+		opacity: 0;
+		cursor: pointer;
+		position: absolute;
+		background: #CB401F;
+		width: $item-size * 2 + $item-margin;
+		height: $item-size * 2 + $item-margin;
+
+		&.pflTile__item--small {
+			background: #CB401F;
+			width: $item-size;
+			height: $item-size;
+		}
+
+		&.pflTile__item--long {
+			background: #CB401F;
+			width: $item-size * 2 + $item-margin;
+			height: $item-size;
+		}
+	}
+}
+
+@import "../animated-elements/portfolio-tile";
+@import "../animated-elements/about-tile";
+@import "../animated-elements/contact-tile";
+@import "../animated-elements/prive-tile";
+@import "../animated-elements/work-tile";
+@import "../animated-elements/reviews-tile";

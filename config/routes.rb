@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   resources :pfl
 
+  get 'app' => 'pfl#pfl'
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
