@@ -1,4 +1,4 @@
 .about-tile {
 	top: $item-size + $item-margin;
-	left: 0;
+	left: $item-size * 2 + $item-margin * 2;
 }
