@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
     function resizeBoxes() {
         var browserWidth = $(window).width();
         var browserHeight = $(window).height();
@@ -53,3 +53,4 @@ $(document).ready(function(){
         goTo(2,2);
     });
 });
+    */

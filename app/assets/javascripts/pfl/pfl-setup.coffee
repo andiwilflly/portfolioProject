@@ -5,6 +5,7 @@ define [
 		require [
 				'pfl/test'
 				'pfl/animation-controller'
+        'pfl/window'
 			],
 			() ->
 				console.log 'omg'

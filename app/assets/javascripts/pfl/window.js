@@ -1,5 +1,3 @@
-/*
-
 $(document).ready(function() {
 
     var windowHeight = $(window).height();
@@ -47,36 +45,35 @@ $(document).ready(function() {
         return Math.max.apply(null, array);
     }
 
-    function goTo(horizontal,vertical) {
+    function goTo(posX,posY) {
 
-        var browserWidth = $(window).width();
-        var browserHeight = $(window).height();
+        var $el = $("[data-position='"+ posX +"."+ posY+"']");
 
-        $('#main').animate({
-            marginLeft: '-'+browserWidth*horizontal,
-            marginTop: '-'+browserHeight*vertical
+        $('body,html').animate({
+            scrollLeft: $el.offset().left,
+            scrollTop: $el.offset().top
         }, 1000);
-
     }
-    $("#link-portfolio").click(function(){
+
+    goTo(2,4);
+
+    $(".link-portfolio").click(function(){
         goTo(2,4);
     });
-    $("#link-skills").click(function(){
+    $(".link-skills").click(function(){
         goTo(3,6);
     });
-    $("#link-work").click(function(){
+    $(".link-work").click(function(){
         goTo(6,2);
     });
-    $("#link-price").click(function(){
+    $(".link-price").click(function(){
         goTo(7,8);
     });
-    $("#link-about").click(function(){
+    $(".link-about").click(function(){
         goTo(5,5);
     });
-    $("#link-contacts").click(function(){
+    $(".link-contacts").click(function(){
         goTo(8,3);
     });
 
 });
-
-    */

@@ -1,9 +1,5 @@
 $ ->
 
-  $("html, body").animate
-    scrollTop: $('.tile--7').offset().top
-  , 200
-
   $('.tile').each( (k, v)->
      $('.tile-navigator').append('<a>to ' + k + '</a>');
   )
