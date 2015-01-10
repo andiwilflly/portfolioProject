@@ -1,60 +1,63 @@
 .main-menu {
 	position: absolute;
 	right: 0;
-	top: 100px;
+	top: 0;
 
 	.main-menu__list {
 		margin: 0;
 		padding: 0;
 
 		.main-menu__item {
-			width: 65px;
-			height: 65px;
-			background: #CB401F;
 			margin-bottom: 10px;
 			list-style: none;
 			cursor: pointer;
-			background-repeat: no-repeat;
-			background-size: 60px 60px;
-			background-position: center;
 
-			&:hover {
-				background: #cb5e29;
-				background-size: 60px 60px;
+			a {
+				display: block;
+				width: 70px;
+				height: 70px;
+				background: #CB401F;
 				background-repeat: no-repeat;
+				background-size: 60px 60px;
 				background-position: center;
 
+				&:hover {
+					background: #cb5e29;
+					background-size: 60px 60px;
+					background-repeat: no-repeat;
+					background-position: center;
+				}
 			}
 			
-			&.main-menu__item--home {
+			&.main-menu__item--home a {
 				background-image: image-url("menu-icons/dwelling1.svg");
 			}
 
-			&.main-menu__item--about {
+			&.main-menu__item--about a {
 				background-image: image-url("menu-icons/important.svg");
 			}
 
-			&.main-menu__item--reviews {
+			&.main-menu__item--reviews a {
 				background-image: image-url("menu-icons/multiple25.svg");
 			}
 
-			&.main-menu__item--portfolio {
+			&.main-menu__item--portfolio a {
 				background-image: image-url("menu-icons/briefcase13.svg");
 			}
 
-			&.main-menu__item--works {
+			&.main-menu__item--works a {
 				background-image: image-url("menu-icons/person128.svg");
 			}
 
-			&.main-menu__item--skills {
+			&.main-menu__item--skills a {
 				background-image: image-url("menu-icons/medical50.svg");
 			}
 
-			&.main-menu__item--price {
+			&.main-menu__item--price a {
 				background-image: image-url("menu-icons/dollar178.svg");
 			}
 
-			&.main-menu__item--contacts {
+			&.main-menu__item--contacts a {
 				background-image: image-url("menu-icons/mail59.svg");
 			}
 		}

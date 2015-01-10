@@ -12,6 +12,7 @@ body {
   font-family: 'Ubuntu';
   font-size: 25px;
   margin: 0;
+  background: #0E0E0E;
   overflow: hidden;
 }
 
@@ -248,3 +249,5 @@ body {
 @import "partials/sections/section-portfolio";
 @import "partials/sections/section-reviews";
 @import "partials/sections/section-skills";
+@import "partials/sections/section-price";
+@import "partials/sections/section-contacts";
