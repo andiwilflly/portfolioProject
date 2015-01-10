@@ -66,13 +66,13 @@ $(document).ready(function () {
 	$(".js-link-work").click(function () {
 		goTo(6, 2);
 	});
-	$(".js-link-price").click(function () {
+	$(".js-link-portfolio").click(function () {
 		goTo(7, 8);
 	});
-	$(".js-link-skills").click(function () {
+	$(".js-link-reviews").click(function () {
 		goTo(5, 5);
 	});
-	$(".js-link-contacts").click(function () {
+	$(".js-link-skills").click(function () {
 		goTo(8, 3);
 	});
 
