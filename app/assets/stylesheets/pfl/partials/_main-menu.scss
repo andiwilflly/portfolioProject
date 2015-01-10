@@ -1,7 +1,62 @@
 .main-menu {
 	position: absolute;
-	right: 0;
-	top: 0;
+
+	&.main-menu--top-left {
+		left: 0;
+		top: 0;
+
+		.main-menu__item {
+			float: left;
+			margin-top: 0;
+			margin-right: 10px;
+		}
+	}
+
+	&.main-menu--top-right {
+		right: 0;
+		top: 0;
+
+		.main-menu__item {
+			float: left;
+			margin-top: 0;
+			margin-left: 10px;
+		}
+	}
+
+	&.main-menu--left-top {
+		left: 0;
+		top: 0;
+	}
+
+	&.main-menu--left-bottom {
+		left: 0;
+		bottom: 0;
+	}
+
+	&.main-menu--right-top {
+		right: 0;
+		top: 0;
+	}
+
+	&.main-menu--right-bottom {
+		right: 0;
+		bottom: 0;
+	}
+
+	&.main-menu--bottom {
+		right: 0;
+		bottom: 0;
+
+		.main-menu__list {
+
+			.main-menu__item {
+				float: left;
+				margin-top: 0;
+				margin-left: 10px;
+				margin-bottom:0;
+			}
+		}
+	}
 
 	.main-menu__list {
 		margin: 0;
