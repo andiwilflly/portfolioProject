@@ -55,24 +55,24 @@ $(document).ready(function () {
 		}, 1000);
 	}
 
-	//goTo(2,4);
+	goTo(2,4);
 
-	$(".link-portfolio").click(function () {
+	$(".js-link-home").click(function () {
 		goTo(2, 4);
 	});
-	$(".link-skills").click(function () {
+	$(".js-link-about").click(function () {
 		goTo(3, 6);
 	});
-	$(".link-work").click(function () {
+	$(".js-link-work").click(function () {
 		goTo(6, 2);
 	});
-	$(".link-price").click(function () {
+	$(".js-link-price").click(function () {
 		goTo(7, 8);
 	});
-	$(".link-about").click(function () {
+	$(".js-link-skills").click(function () {
 		goTo(5, 5);
 	});
-	$(".link-contacts").click(function () {
+	$(".js-link-contacts").click(function () {
 		goTo(8, 3);
 	});
 

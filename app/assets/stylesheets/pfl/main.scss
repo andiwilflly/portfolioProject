@@ -240,5 +240,7 @@ body {
 }
 
 // TODO: move this to the top of main.scss
+@import "partials/main-menu";
 @import "partials/sections/section";
 @import "partials/sections/section-home";
+@import "partials/sections/section-about";

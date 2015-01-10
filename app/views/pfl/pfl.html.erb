@@ -2,24 +2,56 @@
   <%= link_to '<< Back>>', pfl_index_path %>
 </div>
 
-<section class="section-home" id="pfl-home">
+<section class="section-home" id="pfl-home" data-position="2.4">
 
   <div class="pflTile" id="pflTile">
 
     <div id="vh-example" style="overflow: hidden; position: absolute; width: 1vh;"></div>
 
-    <div class="pflTile__item portfolio-tile" id="portfolio-tile">Portfolio</div>
+    <div class="pflTile__item portfolio-tile js-link-portfolio" id="portfolio-tile">Portfolio</div>
 
-    <div class="pflTile__item pflTile__item--small work-tile" id="work-tile">Work</div>
+    <div class="pflTile__item pflTile__item--small work-tile js-link-work" id="work-tile">Work</div>
 
     <div class="pflTile__item pflTile__item--small price-tile" id="price-tile">Price</div>
 
-    <div class="pflTile__item pflTile__item--long contact-tile" id="contact-tile">Contact</div>
+    <div class="pflTile__item pflTile__item--long contact-tile" id="contact-tile">Contacts</div>
 
-    <div class="pflTile__item about-tile" id="about-tile">About Us</div>
+    <div class="pflTile__item about-tile js-link-about" id="about-tile">About Us</div>
 
-    <div class="pflTile__item pflTile__item--long reviews-tile" id="reviews-tile">Reviews</div>
+    <div class="pflTile__item pflTile__item--long reviews-tile js-link-reviews" id="reviews-tile">Reviews</div>
+
+	 <div class="pflTile__item pflTile__item--long reviews-tile js-link-reviews" id="reviews-tile">Skills</div>
 
   </div>
 
+</section>
+
+<section class="section-about" id="section-about" data-position="3.6">
+  <h2>About us</h2>
+  <div class="main-menu js-main-menu">
+	 <ul class="main-menu__list">
+		<li class="main-menu__item main-menu__item--home">Home</li>
+		<li class="main-menu__item main-menu__item--reviews">Reviews</li>
+		<li class="main-menu__item main-menu__item--portfolio js-link-portfolio">Portfolio</li>
+		<li class="main-menu__item main-menu__item--works js-link-work">Works</li>
+		<li class="main-menu__item main-menu__item--skills">Skills</li>
+		<li class="main-menu__item main-menu__item--price">Price</li>
+		<li class="main-menu__item main-menu__item--contacts">Contacts</li>
+	 </ul>
+  </div>
+</section>
+
+<section class="section-work" id="section-work" data-position="6.2">
+  <h2>How we work</h2>
+  <div class="main-menu js-main-menu">
+	 <ul class="main-menu__list">
+		<li class="main-menu__item main-menu__item--home">Home</li>
+		<li class="main-menu__item main-menu__item--about js-link-about">About us</li>
+		<li class="main-menu__item main-menu__item--reviews">Reviews</li>
+		<li class="main-menu__item main-menu__item--portfolio js-link-portfolio">Portfolio</li>
+		<li class="main-menu__item main-menu__item--skills">Skills</li>
+		<li class="main-menu__item main-menu__item--price">Price</li>
+		<li class="main-menu__item main-menu__item--contacts">Contacts</li>
+	 </ul>
+  </div>
 </section>

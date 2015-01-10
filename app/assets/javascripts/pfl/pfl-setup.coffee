@@ -8,8 +8,13 @@ define [
 
 		require [
 				'pfl/animation-controller'
+				'pfl/main-menu'
+				'pfl/window'
 				'pfl/test'
 			],
-			(AnimationController) ->
+			(AnimationController, MainMenu) ->
 				animationController = new AnimationController
 				animationController.start()
+				mainMenu = new MainMenu
+				mainMenu.startAbout($("#section-about").find(".js-main-menu"))
+

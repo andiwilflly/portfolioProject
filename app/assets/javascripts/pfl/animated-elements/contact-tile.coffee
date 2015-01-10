@@ -1,15 +1,24 @@
 define [], ->
-	->
-		@position = {
+  ->
+    @position = {
 
-		}
+    }
 
-		@$el = $('#contact-tile')
+    @$el = $('#contact-tile')
 
-		@start = =>
-			@startMoveEl();
+    @start = =>
+      @startMoveEl()
 
-		@startMoveEl = =>
-			@$el.css('opacity', 1).addClass('animated fadeInDown')
+    @startMoveEl = =>
+      @$el.css('opacity', 1).addClass('animated fadeInDown')
 
-		return false
+    @customAnimation = (runWorkTile)=>
+      @$el.animate({
+        opacity:1
+      },200,->
+        runWorkTile()
+      )
+
+
+
+    return false
