@@ -7,14 +7,13 @@ define [
 		window.TILE_MARGIN = 1
 
 		require [
+				'pfl/pfl-app/initialize'  # Start Backbone App
 				'pfl/animation-controller'
 				'pfl/main-menu'
-				'pfl/window'
-				'pfl/test'
 			],
-			(AnimationController, MainMenu) ->
+			(PFL, AnimationController, MainMenu) ->
 				animationController = new AnimationController
 				animationController.start()
+
 				mainMenu = new MainMenu
 				mainMenu.startAbout($("#section-about").find(".js-main-menu"))
-
