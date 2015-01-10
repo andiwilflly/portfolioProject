@@ -44,3 +44,7 @@ gem 'pry', :group => :development
 gem "net-http-persistent", "~> 2.9"
 gem 'backbone-on-rails'
 gem 'requirejs-rails'
+
+group :production do
+  gem "pg"
+end
