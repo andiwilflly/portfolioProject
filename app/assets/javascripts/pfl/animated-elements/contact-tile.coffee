@@ -10,7 +10,7 @@ define [], ->
       @startMoveEl()
 
     @startMoveEl = =>
-      @$el.css('opacity', 1).addClass('animated fadeInDown')
+      @$el.css('opacity', 1).addClass('animated rotateInDownRight')
 
     @customAnimation = (runWorkTile)=>
       @$el.animate({

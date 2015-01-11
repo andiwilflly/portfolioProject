@@ -7,9 +7,6 @@ define [], () ->
 		windowHeight = $(window).height()
 		windowWidth = $(window).width()
 
-	getMaxOfArray = (array) ->
-		Math.max.apply null, array
-
 	resizeWindow()
 
 	widthList = []
@@ -23,18 +20,13 @@ define [], () ->
 			top: sectionPosition[1] * windowHeight - windowHeight
 			left: sectionPosition[0] * windowWidth - windowWidth
 
-	maxWidth = getMaxOfArray(widthList)
-	maxHeight = getMaxOfArray(heightList)
+	maxWidth =  window.PFL.getMaxOfArray(widthList)
+	maxHeight = window.PFL.getMaxOfArray(heightList)
 
-	$("main").css
-		height: maxHeight * windowHeight
-		width: maxWidth * windowWidth
+	$('section').show()
 
 	$(window).resize ->
 		resizeWindow()
-		$("main").css
-			height: maxHeight * windowHeight
-			width: maxWidth * windowWidth
 
 	# return obj with public functions
 	return {

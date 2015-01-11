@@ -39,32 +39,27 @@ define [
 		@runPortfolioTile = =>
 			@portfolioTile = new PortfolioTile
 			@portfolioTile.start()
-			@portfolioTile.$el.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-				@runContactTile);
+			@portfolioTile.$el.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', @runContactTile)
 
 		@runContactTile = =>
 			@contactTile = new ContactTile
 			@contactTile.customAnimation(@runWorkTile)
-			@contactTile.$el.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-				@runWorkTile);
+			@runWorkTile()
 
 		@runWorkTile = =>
 			@workTile = new WorkTile
 			@workTile.start()
-			@workTile.$el.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-				@runAboutTile);
+			@runAboutTile()
 
 		@runAboutTile = =>
 			@aboutTile = new AboutTile
 			@aboutTile.start()
-			@aboutTile.$el.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-				@runReviewsTile);
+			@aboutTile.$el.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', @runReviewsTile);
 
 		@runReviewsTile = =>
 			@reviewsTile = new ReviewsTile
 			@reviewsTile.start()
-			@reviewsTile.$el.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-				@runSkillsTile);
+			@runSkillsTile()
 
 		@runSkillsTile = =>
 			@skillsTile = new SkillsTile

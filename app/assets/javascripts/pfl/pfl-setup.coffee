@@ -3,17 +3,15 @@ define [
 	],
 	() ->
 
+		window.PFL = {}
 		window.TILE_WIDTH = 20
 		window.TILE_MARGIN = 1
 
 		require [
-				'pfl/pfl-app/initialize'  # Start Backbone App
-				'pfl/animation-controller'
 				'pfl/main-menu'
+				'pfl/helpers/common'
+				'pfl/pfl-app/initialize'  # Start Backbone App
 			],
-			(PFL, AnimationController, MainMenu) ->
-				animationController = new AnimationController
-				animationController.start()
-
+			(MainMenu) ->
 				mainMenu = new MainMenu
 				mainMenu.startAbout($("#section-about").find(".js-main-menu"))
