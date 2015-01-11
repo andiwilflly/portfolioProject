@@ -43,7 +43,7 @@ define [
 
 		@runContactTile = =>
 			@contactTile = new ContactTile
-			@contactTile.customAnimation(@runWorkTile)
+			@contactTile.start()
 			@runWorkTile()
 
 		@runWorkTile = =>
