@@ -39,9 +39,15 @@ $item-margin: 1vh;
 			width: $item-size * 2 + $item-margin;
 			height: $item-size;
 
-            &:hover {
-              background: #cb5e29;
-            }
+			&:hover {
+			  background: #cb5e29;
+			}
+		}
+
+		a {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: whitesmoke;
 		}
 	}
 }
