@@ -4,8 +4,13 @@ define [
 	Backbone.Router.extend
 
 		routes:
-			'':         "goToPage"
+			'':         "goToHomePage"
 			'page/:id': "goToPage"
+
+		goToHomePage: =>
+			@section = $('#section-home')
+
+			navigator.goTo(@section.attr('data-position'))
 
 		goToPage: (id) =>
 			@section = $('#section-' + id)
