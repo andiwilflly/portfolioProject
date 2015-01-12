@@ -1,10 +1,11 @@
 define [], ->
 	->
-
+		console.log this
 		@$el = $('#contact-tile')
 
 		@start = (callback)=>
 			@callback = callback
+			console.log this
 			@bindEvents()
 			@startMoveEl()
 

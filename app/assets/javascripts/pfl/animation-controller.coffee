@@ -52,8 +52,7 @@ define [
 
 		@runAboutTile = =>
 			@aboutTile = new AboutTile
-			@aboutTile.start()
-			@aboutTile.$el.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', @runReviewsTile);
+			@aboutTile.start(@runReviewsTile)
 
 		@runReviewsTile = =>
 			@reviewsTile = new ReviewsTile
