@@ -11,11 +11,10 @@ define([], function() {
 			that.startMoveEl();
 
 			// leastener of event "css3 animation"
-			that.$el.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+			that.$el.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 				bindEvents();
 				// this place to animation of block
 				callback();
-
 			});
 
 		};
@@ -27,13 +26,13 @@ define([], function() {
 		function bindEvents() {
 			var tileWidth = that.$el.width();
 
-			that.$el.mouseover(function(){
+			that.$el.mouseover(function() {
 				that.$el.find("#about-tile__mask").stop().animate({
 					left:tileWidth + 1
 				},700)
 			});
 
-			that.$el.mouseout(function(){
+			that.$el.mouseout(function() {
 				that.$el.find("#about-tile__mask").stop().animate({
 					left:0
 				},700)
