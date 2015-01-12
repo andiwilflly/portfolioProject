@@ -1,12 +1,20 @@
-$item-size: 20vh;
-$item-margin: 1vh;
+$item-size: 150px;
+$item-margin: 15px;
+
+@import "../animated-elements/portfolio-tile";
+@import "../animated-elements/about-tile";
+@import "../animated-elements/contact-tile";
+@import "../animated-elements/prive-tile";
+@import "../animated-elements/work-tile";
+@import "../animated-elements/reviews-tile";
+@import "../animated-elements/skills-tile";
 
 .section-home {
 	background: #0E0E0E;
 }
 
 .pflTile {
-	width: 80vw;
+	width: 70%;
 	margin: 10vh auto;
 	height: 100vh;
 	position: relative;
@@ -47,15 +55,7 @@ $item-margin: 1vh;
 		a {
 			text-decoration: none;
 			text-transform: uppercase;
-			color: whitesmoke;
+			color: white
 		}
 	}
 }
-
-@import "../animated-elements/portfolio-tile";
-@import "../animated-elements/about-tile";
-@import "../animated-elements/contact-tile";
-@import "../animated-elements/prive-tile";
-@import "../animated-elements/work-tile";
-@import "../animated-elements/reviews-tile";
-@import "../animated-elements/skills-tile";
